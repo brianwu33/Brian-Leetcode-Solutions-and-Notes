@@ -1,4 +1,4 @@
-#Solution 1
+#Solution 1 (Runtime: O(N), Space: O(N)）
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
@@ -19,7 +19,7 @@ class Solution:
                 return False
 
         return True
-#Solution 2
+#Solution 2 (Runtime: O(N), Space: O(1)）
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)
